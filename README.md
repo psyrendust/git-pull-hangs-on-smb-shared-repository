@@ -55,3 +55,5 @@ If you output the current processes you'll notice that `git fmt-merge-msg` is ha
 45849 ttys008    0:00.00 /bin/sh /usr/local/Cellar/git/1.8.5.3/libexec/git-core/git-pull origin master
 45850 ttys008    0:26.20 git fmt-merge-msg
 ```
+
+test 1
