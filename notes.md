@@ -60,3 +60,34 @@ smb_neg=smb1_only
 ```shell
 smb://10.81.11.104
 ```
+
+**Permissions of `.git/`:**  
+
+```shell
+/Volumes/macsmb1/git-pull-hangs-on-smb-shared-repository test-updates
+❯ la .git/
+total 108
+-rw-r--r-- 1 larrygordon staff   403 Jan 31 12:03 FETCH_HEAD
+-rw-r--r-- 1 larrygordon staff    29 Jan 31 11:59 HEAD
+-rw-r--r-- 1 larrygordon staff    41 Jan 31 12:02 ORIG_HEAD
+-rw-r--r-- 1 larrygordon staff   413 Jan 31 11:59 config
+-rw-r--r-- 1 larrygordon staff    73 Jan 31 11:58 description
+drwxr-xr-x 1 larrygordon staff 16384 Jan 31 11:58 hooks
+-rw-r--r-- 1 larrygordon staff   808 Jan 31 12:02 index
+drwxr-xr-x 1 larrygordon staff 16384 Jan 31 11:58 info
+drwxr-xr-x 1 larrygordon staff 16384 Jan 31 11:58 logs
+drwxr-xr-x 1 larrygordon staff 16384 Jan 31 12:02 objects
+-rw-r--r-- 1 larrygordon staff   251 Jan 31 11:58 packed-refs
+drwxr-xr-x 1 larrygordon staff 16384 Jan 31 11:58 refs
+trace: built-in: git 'rev-parse' '--show-toplevel'
+```
+
+## Permissions of root mount folder ##
+
+```shell
+❯ la /Volumes
+total 20
+lrwxr-xr-x 1 root        admin     1 Jan 31 10:51 MacintoshHD -> /
+drwx------ 1 larrygordon staff   264 Jan 31 11:27 macafp
+dr-xr-xr-x 1 larrygordon staff 16384 Jan 31 11:58 macsmb1
+```
