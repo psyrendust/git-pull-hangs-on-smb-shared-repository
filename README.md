@@ -58,3 +58,4 @@ If you output the current processes you'll notice that `git fmt-merge-msg` is ha
 
 test 1
 test 2
+test 3
