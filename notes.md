@@ -43,3 +43,20 @@ drwxr-xr-x 1 larrygordon staff  432 Jan 31 11:37 objects
 drwxr-xr-x 1 larrygordon staff  264 Jan 31 11:13 refs
 trace: built-in: git 'rev-parse' '--show-toplevel'
 ```
+
+-----
+**Remote Machine:** MacBook Air 10.9.1  
+**Connection Method:** SMB1 through Finder's `Connect to Server...` command  
+**Connection Setup:**
+
+```shell
+❯ cat ~/Library/Preferences/nsmb.conf
+[default]
+smb_neg=smb1_only
+```
+
+**Protocol Used:**
+
+```shell
+smb://10.81.11.104
+```
